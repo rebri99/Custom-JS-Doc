@@ -28,10 +28,10 @@ This extension contributes the following settings:
 * `customJsDoc.author`: Set to `@author`. If set, outputs `@author <value>`.
 * `customJsDoc.version`: Set to `@version`. If set, outputs `@version <value>`.
 * `customJsDoc.sinceFormat`: Set to `@since`. If set, outputs `@since` with this date format. (Example: yyyy. MM. dd.)
-* * Only Supported yyyy | MM | dd.
+ * Only Supported yyyy | MM | dd.
 * `customJsDoc.customTags`: Custom tags appended to JS Doc.
-* * Example: [{"tag":"see","type":"string","text":"summary"}]
-* * Example Result: `@see {string} summary` (with one line break after `@since`)
+ * Example: [{"tag":"see","type":"string","text":"summary"}]
+ * Example Result: `@see {string} summary` (with one line break after `@since`)
 
 ## Known Issues
 
