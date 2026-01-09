@@ -1,0 +1,83 @@
+{
+  "name": "custom-js-doc",
+  "displayName": "Custom JS Doc",
+  "description": "Customizable JS-Doc with auto trigger on /** and user-configurable model patches.",
+  "version": "0.0.1",
+  "publisher": "Unknown",
+  "engines": {
+    "vscode": "^1.107.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./extension.js",
+  "activationEvents": [
+    "onStartupFinished",
+    "onLanguage:javascript",
+    "onLanguage:javascriptreact"
+  ],
+  "contributes": {
+    "commands": [
+        {
+            "command": "customJsDoc.generate",
+            "title": "Custom JS Doc: Generate JSDoc"
+        }
+    ],
+    "configuration": {
+        "title": "Custom JS Doc",
+        "properties": {
+            "customJsDoc.enable": {
+                "type": "boolean",
+                "default": false,
+                "description": "Enable this extension.",
+                "order": 1
+            },
+            "customJsDoc.author": {
+                "type": "string",
+                "default": "",
+                "description": "If set, outputs @author <value>.",
+                "order": 2
+            },
+            "customJsDoc.version": {
+                "type": "string",
+                "default": "",
+                "description": "If set, outputs @version <value>.",
+                "order": 3
+            },
+            "customJsDoc.sinceFormat": {
+                "type": "string",
+                "default": "",
+                "description": "If set, outputs @since with this date format. \n- Only Use yyyy | MM | dd (Example: yyyy. MM. dd.)",
+                "order": 4
+            },
+            "customJsDoc.customTags": {
+                "type": "array",
+                "default": [],
+                "description": "Custom tags appended to JSDoc. \nExample: [{\"tag\":\"see\",\"type\":\"string\",\"text\":\"summary\"}] \n=> @see {string} summary \nExample: [{\"tag\":\"version\",\"text\":\"1.0.0\"}] \n=> @version 1.0.0",
+                "order": 5,
+                "items": {
+                    "type": "object"
+                }
+            }
+        }
+    }
+  },
+  "dependencies": {
+    "fast-json-patch": "^3.1.1",
+    "handlebars": "^4.7.8",
+    "typescript": "^5.5.4"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.107.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "eslint": "^9.39.1",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
