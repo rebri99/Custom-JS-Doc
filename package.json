@@ -2,7 +2,7 @@
   "name": "custom-js-doc",
   "displayName": "Custom JS Doc",
   "description": "Customizable JS-Doc with auto trigger on /** and user-configurable model patches.",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/rebri99/Custom-JS-Doc.git"
