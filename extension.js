@@ -165,7 +165,7 @@ function startSuppressSuggest(ms) {
         if (hideSuggestCommandId) {
             vscode.commands.executeCommand(hideSuggestCommandId);
         }
-    }, 10);
+    }, 30);
 }
 
 function startSuppressIfJustCompletedJsDoc(editor) {
