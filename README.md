@@ -14,13 +14,13 @@ This is used by typing `/**` and pressing `Enter`.
 * Javascriptreact
 * AngularJS
 
-## Features
-
-CustomTags feature description to be added.
-
 ## Requirements
 
 None.
+
+## Features
+
+CustomTags feature description to be added.
 
 ## Extension Settings
 
@@ -38,9 +38,3 @@ This extension contributes the following settings:
 ## Known Issues
 
 None.
-
-## Release Notes
-
-### 1.0.0
-
-Initial release of Custom JS Doc.
