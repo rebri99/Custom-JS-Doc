@@ -1,7 +1,7 @@
 {
   "name": "custom-js-doc",
   "displayName": "Custom JS Doc",
-  "description": "Customizable JS-Doc with auto trigger on /** and user-configurable model patches.",
+  "description": "Simple Customizable Tag JS-Doc",
   "version": "1.0.0",
   "repository": {
     "type": "git",

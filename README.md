@@ -6,6 +6,8 @@ This JS Doc just hide Default JS Doc's suggest widget instead deactivate Default
 
 This means that you might accidentally use the Default JS Doc instead of the Custom JS Doc.
 
+This is used by typing `/**` and pressing `Enter`.
+
 ## Supported Programming Language
 
 * Javascript
